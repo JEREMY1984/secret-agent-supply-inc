@@ -4,6 +4,8 @@ html {
 .logo {
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 .logo .container {
   width: 960px;
@@ -27,6 +29,8 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
 }
 .banner .container {
   height: 25rem;
@@ -60,6 +64,7 @@ html {
   background-color: firebrick;
   color: white;
   display: flex;
+  justify-content: center;
 }
 
 .menu nav  {
@@ -74,8 +79,13 @@ html {
   display: flex;
   justify-content: space-between;
 }
+.menu  .mobile {
+  display: none;
+}
 .product {
   margin-top: 3rem;
+  display: flex;
+  justify-content: center;
 
 }
 .product .container {
@@ -118,6 +128,8 @@ html {
 }
 .info {
   margin-top: 3rem;
+  display: flex;
+  justify-content: center;
 }
 .info .container {
   width: 960px;
@@ -156,26 +168,56 @@ footer p {
   width: 960px;
 }
 
-
+@media only screen and (max-width: 1024px) {
+   .menu .pc {
+    display: none;
+    }
+    .menu .mobile {
+      display: block;
+    }
+    .menu ul {
+      justify-content: center;
+    }
+    .glasses.box {
+      display: none;
+    }
+    .product .box {
+      width: 47%;
+    }
 
 }
+@media only screen and (max-width: 470px) {
+  .banner {
+    height: 15rem;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
 
+    overflow: ;
+  }
+  .banner .container {
+    /*display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;*/
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    overflow: ;
+  }
+  .container .newArrival {
+    background-color: yellow;
 
-
-
-body {
-
+  }
+  .newArrival h2 {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+    padding-left: 2rem;
+  }
+  .newArrival p {
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 2rem;
+  }
 }
-
-
-.logo, .banner, .menu, .product, .info, footer .container {
-  display: flex;
-  justify-content: center;
-
-}
-
-
-/*.logo .product p, .bgblk, footer,  {
-  background-color: black;
-  color: white;
-}*/
